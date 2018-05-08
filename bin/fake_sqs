@@ -32,6 +32,10 @@ parser = OptionParser.new do |o|
     options[:server] = server
   end
 
+  o.on "-n", "--hostname HOST", "Host name to return in responses" do |host|
+    options[:hostname] = host
+  end
+
   o.on "-P", "--pid PIDFILE", "Where to write the pid" do |pid|
     options[:pid] = pid
   end
